@@ -59,13 +59,47 @@ nav {
     margin-top: 1em;
 }
 
-nav.hidden {
+nav.hide {
     display: none;
 }
 
 footer {
     margin-top: 2em;
     font-size: 0.9em;
+}
+
+/* Modal styles */
+.viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: grid;
+    grid-template-rows: auto 1fr;
+    place-items: center;
+    z-index: 10;
+}
+
+.viewer img {
+    max-height: 100%;
+    max-width: 90%;
+}
+
+.close-viewer {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: var(--text-light);
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.viewer.hide {
+    display: none;
 }
 
 /* Media queries */
