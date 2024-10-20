@@ -82,6 +82,24 @@ h3 {
     font-size: 1.2em;
     color: #AF1B3F;
 }
+form select, form button {
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #EFC69B;
+    width: 100%;
+}
+
+form button {
+    background-color: #AF1B3F;
+    color: white;
+    cursor: pointer;
+}
+
+form label {
+    font-weight: bold;
+    color: #AF1B3F;
+}
 
 /* Additional styling for responsiveness */
 @media (max-width: 768px) {

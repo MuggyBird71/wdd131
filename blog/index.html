@@ -57,7 +57,29 @@
 
         <aside>
             <h3>Filters</h3>
-            <p>Filter form will go here</p>
+            <form id="filter-form">
+                <label for="age">Age:</label>
+                <select id="age">
+                    <option value="all">All Ages</option>
+                    <option value="10-14">10-14</option>
+                    <option value="12-16">12-16</option>
+                </select>
+        
+                <label for="genre">Genre:</label>
+                <select id="genre">
+                    <option value="all">All Genres</option>
+                    <option value="Fantasy">Fantasy</option>
+                </select>
+        
+                <label for="rating">Rating:</label>
+                <select id="rating">
+                    <option value="all">All Ratings</option>
+                    <option value="****">**** (4 stars)</option>
+                    <option value="⭐⭐⭐⭐">⭐⭐⭐⭐ (4 stars)</option>
+                </select>
+        
+                <button type="button" onclick="filterBooks()">Apply Filters</button>
+            </form>
         </aside>
     </main>
 
