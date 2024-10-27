@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A blog reviewing books for kids to enjoy reading">
-    <meta name="author" content="Your Name">
+    <meta name="author" content="Dylan Phillips">
     <title>Kids Read for Fun</title>
     <link rel="stylesheet" href="blog.css">
 </head>
@@ -26,33 +26,7 @@
 
     <main id="maincontent">
         <section class="book-review">
-            <article>
-                <div class="book-details">
-                    <p>July 5, 2022</p>
-                    <p>10-14</p>
-                    <p>Fantasy</p>
-                    <p>****</p>
-                </div>
-                <div class="book-content">
-                    <h2>Septimus Heap Book One: Magyk</h2>
-                    <img src="path-to-image" alt="Cover of Septimus Heap Book One: Magyk">
-                    <p>If you enjoy stories about seventh sons of seventh sons and magyk, this is the book for you. <a href="#">Read More...</a></p>
-                </div>
-            </article>
-
-            <article>
-                <div class="book-details">
-                    <p>December 12, 2021</p>
-                    <p>12-16</p>
-                    <p>Fantasy</p>
-                    <p>*****</p>
-                </div>
-                <div class="book-content">
-                    <h2>Magnus Chase Book One: Sword of Summer</h2>
-                    <img src="path-to-image" alt="Cover of Magnus Chase Book One: Sword of Summer">
-                    <p>If you enjoy epic fantasy adventures with Norse mythology, this book is a must-read. <a href="#">Read More...</a></p>
-                </div>
-            </article>
+            <!-- Articles will be inserted here with the javascript -->
         </section>
 
         <aside>
@@ -64,25 +38,25 @@
                     <option value="10-14">10-14</option>
                     <option value="12-16">12-16</option>
                 </select>
-        
+
                 <label for="genre">Genre:</label>
                 <select id="genre">
                     <option value="all">All Genres</option>
                     <option value="Fantasy">Fantasy</option>
                 </select>
-        
+
                 <label for="rating">Rating:</label>
                 <select id="rating">
                     <option value="all">All Ratings</option>
-                    <option value="****">**** (4 stars)</option>
                     <option value="⭐⭐⭐⭐">⭐⭐⭐⭐ (4 stars)</option>
+                    <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐ (5 stars)</option>
                 </select>
-        
+
                 <button type="button" onclick="filterBooks()">Apply Filters</button>
             </form>
         </aside>
     </main>
 
-    <script src="blog.js"></script>
+    <script src="blog.js" defer></script>
 </body>
 </html>
