@@ -1,0 +1,86 @@
+@import url(style.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 540px; 
+  margin: auto;
+}
+
+.contact h1 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 24px; 
+  color: #333;
+  font-weight: 500;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-size: 16px;
+  color: #555; 
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  border: 2px solid #ddd; 
+  border-radius: 8px;
+  font-size: 16px; 
+  background-color: #fff; 
+  transition: border-color 0.3s; 
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #46028a;
+  outline: none; 
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 15px;
+  background-color: #8346c0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s; 
+}
+
+.contact-form button:hover {
+  background-color: #561597;
+}
+
+@media (max-width: 600px) {
+  .contact {
+    padding: 15px;
+  }
+
+  .contact h1 {
+    font-size: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    font-size: 14px;
+  }
+}
