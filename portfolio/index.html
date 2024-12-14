@@ -4,62 +4,134 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dylan Phillips</title>
+
+    <!-- Preload Hero Image -->
+    <link rel="preload" href="./imgs/hero_image.jpg" as="image" />
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Inline Critical CSS -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+      }
+
+      header img {
+        max-width: 150px;
+        height: auto;
+        border-radius: 50%;
+      }
+
+      header {
+        background-color: transparent;
+        color: white;
+        text-align: center;
+        padding: 1em 0;
+      }
+
+      .hero {
+        text-align: center;
+        background-color: #ffffffab;
+        border-radius: 15px;
+      }
+
+      .hero img {
+        width: 400px;
+        height: auto;
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+      }
+
+      #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      .icons-grid i {
+        font-size: 2em;
+        color: #333;
+        margin: 10px;
+        transition: color 0.3s ease, transform 0.3s ease;
+      }
+
+      .icons-grid i:hover {
+        color: #4c04aa;
+        transform: scale(1.2);
+      }
+    </style>
+
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"
+      defer
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/050345d38b.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
   </head>
   <body>
+    <!-- Particles Background -->
     <div id="particles-js"></div>
+
+    <!-- Header Section -->
     <header>
-      <img src="./imgs/logo.webp" alt="personal Logo" />
+      <img src="./imgs/logo.webp" alt="Personal Logo" width="150" height="150" />
       <nav>
         <a href="./index.html">Home</a>
         <a href="./projects.html">Projects</a>
         <a href="./contact-me.html">Contact Me</a>
       </nav>
     </header>
+
+    <!-- Hero Section -->
     <section class="hero">
-      <img src="./imgs/hero_image.jpg" alt="hero photo" />
-
-
+      <img
+        src="./imgs/hero_image.jpg"
+        alt="Hero Photo"
+        width="400"
+        height="400"
+      />
       <div class="hero-content">
         <h1>
           Hi, I am <br />
           <span id="dynamic-text">Software Engineer</span>
         </h1>
         <p>
-          I have a passion about developing innovative programs that expedite
-          the efficiency and effectiveness of organizational success <br />
-          Experienced in various programming languages and always eager to learn
-          more.
+          I have a passion for developing innovative programs that expedite
+          organizational success. Experienced in various programming languages
+          and eager to learn more.
         </p>
       </div>
     </section>
+
+    <!-- Technologies Section -->
     <section class="techs" id="techs">
       <h2 class="title-tech">Technologies</h2>
       <div class="icons-grid anim">
         <i class="fa-brands fa-react" data-tooltip="React | NextJS"></i>
-        <i class="fa-brands fa-node-js" data-tooltip="Node.js | express"></i>
+        <i class="fa-brands fa-node-js" data-tooltip="Node.js | Express"></i>
         <i class="fa-brands fa-html5" data-tooltip="HTML5 | XML"></i>
-        <i class="fa-brands fa-css3-alt" data-tooltip="CSS3 | Tailwindcss"></i>
-        <i class="fa-brands fa-sass" data-tooltip="Sass | SCSS"></i>
-        <i class="fa-brands fa-js" data-tooltip="JavaScript | Typescript"></i>
-        <i class="fa-solid fa-database" data-tooltip="mongodb | mysql"></i>
+        <i class="fa-brands fa-css3-alt" data-tooltip="CSS3 | TailwindCSS"></i>
+        <i class="fa-brands fa-js" data-tooltip="JavaScript | TypeScript"></i>
+        <i class="fa-solid fa-database" data-tooltip="MongoDB | MySQL"></i>
         <i class="fa-brands fa-aws" data-tooltip="AWS"></i>
-        <i class="fa-brands fa-java" data-tooltip="Java | spring"></i>
-        <i class="fa-brands fa-php" data-tooltip="PHP"></i>
+        <i class="fa-brands fa-java" data-tooltip="Java | Spring"></i>
         <i class="fa-brands fa-git-alt" data-tooltip="Git"></i>
-        <i class="fa-brands fa-vuejs" data-tooltip="Vue.js"></i>
-        <i class="fa-brands fa-python" data-tooltip="Python"></i>
-        <i class="fa-brands fa-figma" data-tooltip="Figma"></i>
-        <i class="fa-brands fa-npm" data-tooltip="NPM | pnpm | bun"></i>
         <i class="fa-brands fa-docker" data-tooltip="Docker"></i>
       </div>
     </section>
 
-    <script src="./js/main.js"></script>
-    <script
-      src="https://kit.fontawesome.com/050345d38b.js"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Local Scripts -->
+    <script src="./js/main.js" defer></script>
   </body>
 </html>
